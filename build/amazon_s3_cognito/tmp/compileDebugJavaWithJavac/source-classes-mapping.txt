@@ -1,0 +1,2 @@
+com/famproperties/amazon_s3_cognito/BuildConfig.java
+ com.famproperties.amazon_s3_cognito.BuildConfig

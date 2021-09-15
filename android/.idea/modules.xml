@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/android.iml" filepath="$PROJECT_DIR$/.idea/modules/android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/707618225/android.amazon_s3_cognito.iml" filepath="$PROJECT_DIR$/.idea/modules/707618225/android.amazon_s3_cognito.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/android.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/android.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1556190041/android.connectivity_plus.iml" filepath="$PROJECT_DIR$/.idea/modules/-1556190041/android.connectivity_plus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1689484832/android.firebase_auth.iml" filepath="$PROJECT_DIR$/.idea/modules/-1689484832/android.firebase_auth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-724640742/android.firebase_core.iml" filepath="$PROJECT_DIR$/.idea/modules/-724640742/android.firebase_core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-604513692/android.flutter_facebook_auth.iml" filepath="$PROJECT_DIR$/.idea/modules/-604513692/android.flutter_facebook_auth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-501972835/android.google_sign_in.iml" filepath="$PROJECT_DIR$/.idea/modules/-501972835/android.google_sign_in.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-2144238451/android.path_provider.iml" filepath="$PROJECT_DIR$/.idea/modules/-2144238451/android.path_provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1671904212/android.sign_in_with_apple.iml" filepath="$PROJECT_DIR$/.idea/modules/-1671904212/android.sign_in_with_apple.iml" />
+    </modules>
+  </component>
+</project>
