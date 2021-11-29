@@ -1,64 +1,56 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/single_child_widget.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
 
-class BaseList<T> extends StatefulWidget {
-  final Widget Function(T item) child;
+int _page = 0;
+int _length = 0;
+
+class BaseList<T> extends SingleChildStatelessWidget {
+  final int total;
   final List<T> data;
-  final int? total;
   final Widget? header;
   final Widget? footer;
+  final void Function() refresh;
+  final void Function(int page) loadMore;
   final RefreshController refreshController;
-  final void Function()? refresh;
-  final void Function(int page)? loadMore;
 
-  const BaseList(
-      {Key? key,
-      required this.child,
-      required this.data,
-      this.total,
-      this.header,
-      this.footer,
-      this.refresh,
-      this.loadMore, required this.refreshController})
-      : super(key: key);
+  final Widget Function(BuildContext context, T value, Widget? child) builder;
 
-  @override
-  _BaseListState createState() => _BaseListState();
-}
+  BaseList({Key? key,
+    this.header,
+    this.footer,
+    Widget? child,
+    required this.data,
+    required this.total,
+    required this.refresh,
+    required this.builder,
+    required this.loadMore,
+    required this.refreshController,})
+      : super(key: key, child: child);
 
-class _BaseListState extends State<BaseList> {
-
-  int page = 1;
-  int length = 0;
-
-  void _onLoading() async {
-    if (widget.loadMore == null) return widget.loadMore!(page);
-    page++;
+  void _onLoading() {
+    _page++;
+    loadMore(_page);
   }
 
-  void _onRefresh() async {
-    if (widget.refresh == null) return widget.refresh!();
-    page = 1;
+  void _onRefresh() {
+    _page = 0;
+    refresh();
   }
 
   @override
-  void initState() {
-    super.initState();
-  }
+  Widget buildWithChild(BuildContext context, Widget? child) {
+    _length = data.length + (header != null ? 1 : 0) + (footer != null ? 1 : 0);
+    if (refreshController.isLoading) {
+      refreshController.loadComplete();
+    }
+    if (refreshController.isRefresh) {
+      refreshController.refreshCompleted();
+    }
 
-  @override
-  void dispose() {
-    super.dispose();
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    length = widget.data.length +
-        (widget.header != null ? 1 : 0) +
-        (widget.footer != null ? 1 : 0);
     return SmartRefresher(
-      controller: widget.refreshController,
+      controller: refreshController,
       onRefresh: _onRefresh,
       onLoading: _onLoading,
       header: WaterDropHeader(
@@ -74,12 +66,13 @@ class _BaseListState extends State<BaseList> {
       ),
       enablePullUp: true,
       child: ListView.builder(
-        itemCount: length,
-        itemBuilder: (context, index) => widget.header != null && index == 0
-            ? widget.header!
-            : widget.footer != null && index == length
-                ? widget.footer!
-                : widget.child(widget.data[index]),
+        itemCount: _length,
+        itemBuilder: (context, index) =>
+        header != null && index == 0
+            ? header!
+            : footer != null && index == _length
+            ? footer!
+            : builder(context, data[index], child),
       ),
     );
   }

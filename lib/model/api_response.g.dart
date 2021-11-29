@@ -16,6 +16,7 @@ ApiResponse<T> _$ApiResponseFromJson<T>(
     _$nullableGenericFromJson(json['items'], fromJsonT),
     _$nullableGenericFromJson(json['data'], fromJsonT),
     json['description'] as String?,
+    json['count'] as int,
   );
 }
 
@@ -29,6 +30,7 @@ Map<String, dynamic> _$ApiResponseToJson<T>(
       'items': _$nullableGenericToJson(instance.items, toJsonT),
       'data': _$nullableGenericToJson(instance.data, toJsonT),
       'description': instance.description,
+      'count': instance.count,
     };
 
 T? _$nullableGenericFromJson<T>(

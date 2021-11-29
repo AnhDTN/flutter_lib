@@ -3,12 +3,13 @@ part 'api_response.g.dart';
 
 @JsonSerializable(genericArgumentFactories: true)
 class ApiResponse<T> {
-  ApiResponse( this.message, this.code, this.items, this.data, this.description);
+  ApiResponse( this.message, this.code, this.items, this.data, this.description, this.count);
   final int code;
   final String? message;
   final T? items;
   final T? data;
   final String? description;
+  final int count;
   factory ApiResponse.fromJson(Map<String, dynamic> json,
       T Function(Object? json) fromJsonT) =>
       _$ApiResponseFromJson(json, fromJsonT);

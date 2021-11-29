@@ -35,20 +35,22 @@ class _BaseImageNetworkState extends State<BaseImageNetwork> {
         height: widget.height,
         fit: BoxFit.cover,
         color: widget.color,
-        frameBuilder: (context, child , int, bool) => Image.asset(
+        frameBuilder: (context, child, int, bool) => Image.asset(
           widget.placeHolder,
           width: widget.width,
           height: widget.height,
           fit: BoxFit.cover,
           color: widget.color,
         ),
-        loadingBuilder: (context, child, event) => Image.asset(
-          widget.placeHolder,
-          width: widget.width,
-          height: widget.height,
-          fit: BoxFit.cover,
-          color: widget.color,
-        ),
+        loadingBuilder: (context, child, event) => event == null
+            ? child
+            : Image.asset(
+                widget.placeHolder,
+                width: widget.width,
+                height: widget.height,
+                fit: BoxFit.cover,
+                color: widget.color,
+              ),
         errorBuilder: (context, object, stackTrace) => Image.asset(
           widget.imageError,
           width: widget.width,

@@ -12,6 +12,7 @@ import 'package:flutter_lib/services/app_service/dialog_service/dialog_manager.d
 import 'package:flutter_lib/services/app_service/dialog_service/dialog_service.dart';
 import 'package:flutter_lib/services/local_storage_service/local_storage_service.dart';
 import 'package:flutter_lib/views/page/home_page.dart';
+import 'package:flutter_lib/views/page/splash_page.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:get_it/get_it.dart';
 import 'package:provider/provider.dart';
@@ -66,22 +67,22 @@ class _MyAppState extends State<MyApp> {
       builder: (context, state, child) => MaterialApp(
           theme: state.isDarkTheme ? darkTheme : lightTheme,
           themeMode: ThemeMode.light,
-          locale: state.languageApp == LanguageApp.vi ? Locale('vi', '') :  Locale('en', ''),
-          localizationsDelegates: [
+          locale: state.languageApp == LanguageApp.vi ? const Locale('vi', '') :  const Locale('en', ''),
+          localizationsDelegates: const [
             AppLocalizations.delegate,
             GlobalMaterialLocalizations.delegate,
             GlobalWidgetsLocalizations.delegate,
             GlobalCupertinoLocalizations.delegate,
           ],
-          supportedLocales: [
-            const Locale('vi', ''), // VietNam
-            const Locale('en', ''), // English
+          supportedLocales: const [
+            Locale('vi', ''), // VietNam
+            Locale('en', ''), // English
           ],
           builder: (context, child) => Navigator(
                 onGenerateRoute: (settings) => MaterialPageRoute(
                     builder: (context) => DialogManager(child: child!)),
               ),
-          home: HomePage()),
+          home: const SplashPage()),
     );
   }
 }

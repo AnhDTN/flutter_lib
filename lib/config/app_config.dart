@@ -22,11 +22,11 @@ class AppConfig {
   static String get baseRestfulUrl {
     switch (flavor) {
       case Flavor.production:
-        return 'http://api72.mpire.asia/v1/web';
+        return 'http://139.59.242.117/api/v1';
       case Flavor.staging:
-        return 'http://api72.mpire.asia/v1/web';
+        return 'http://188.166.180.70/api/v1';
       default:
-        return 'http://api72.mpire.asia/v1/web';
+        return 'http://139.59.242.117/api/v1';
     }
   }
 

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_lib/model/language.dart';
 import 'package:flutter_lib/providers/app_provider.dart';
 import 'package:flutter_lib/resources/colors.dart';
+import 'package:flutter_lib/views/page/list_page.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
@@ -29,7 +30,7 @@ class _HomePageState extends State<HomePage> {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text("Dark mode"),
+                      const Text("Dark mode"),
                       Switch(value: state.isDarkTheme, onChanged: (value) {
                         context.read<AppProvider>().onChangeTheme(value);
                       }, ),
@@ -69,7 +70,17 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                 ),
-                Padding(padding: EdgeInsets.only(top: 32), child: Text(AppLocalizations.of(context)!.helloWorld),)
+                Padding(padding: const EdgeInsets.only(top: 32), child: Text(AppLocalizations.of(context)!.helloWorld),),
+                Padding(
+                  padding: const EdgeInsets.only(top: 100),
+                  child: SizedBox(
+                    width: 160,
+                    height: 40,
+                    child: OutlinedButton(onPressed: (){
+                      Navigator.of(context).push(MaterialPageRoute(builder: (context)=> ListPage()));
+                    }, child: const Text("Go to Jobs")),
+                  ),
+                )
               ],
             ),
           ),

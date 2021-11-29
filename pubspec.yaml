@@ -41,6 +41,9 @@ dependencies:
   graphql_flutter: ^5.0.0
   amazon_s3_cognito: ^0.6.0
   tuple: ^2.0.0
+  animations: ^2.0.2
+  simple_animations: ^4.0.1
+  page_transition: ^2.0.4
   flutter_localizations:
     sdk: flutter
 

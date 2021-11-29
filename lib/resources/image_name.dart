@@ -5,6 +5,7 @@ class ImageName {
   static String placeHolder = Helpers.assetPath("placeholder");
   static String logo = Helpers.assetPath("logo");
   static String avatarPlaceHolder = Helpers.assetPath("avatar_placeholder");
+  static String splash = Helpers.assetPath("splash");
 
 }
 

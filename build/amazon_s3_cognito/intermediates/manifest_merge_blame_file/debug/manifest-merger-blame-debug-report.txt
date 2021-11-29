@@ -3,10 +3,10 @@
 3    package="com.famproperties.amazon_s3_cognito" >
 4
 5    <uses-sdk android:minSdkVersion="16" />
-5-->/Users/namanh/Documents/flutter/flutter/.pub-cache/hosted/pub.dartlang.org/amazon_s3_cognito-0.6.0/android/src/main/AndroidManifest.xml
+5-->/Users/doantiennamanh/Documents/flutter/flutter/.pub-cache/hosted/pub.dartlang.org/amazon_s3_cognito-0.6.0/android/src/main/AndroidManifest.xml
 6
 7    <uses-permission android:name="android.permission.INTERNET" />
-7-->/Users/namanh/Documents/flutter/flutter/.pub-cache/hosted/pub.dartlang.org/amazon_s3_cognito-0.6.0/android/src/main/AndroidManifest.xml:3:5-67
-7-->/Users/namanh/Documents/flutter/flutter/.pub-cache/hosted/pub.dartlang.org/amazon_s3_cognito-0.6.0/android/src/main/AndroidManifest.xml:3:22-64
+7-->/Users/doantiennamanh/Documents/flutter/flutter/.pub-cache/hosted/pub.dartlang.org/amazon_s3_cognito-0.6.0/android/src/main/AndroidManifest.xml:3:5-67
+7-->/Users/doantiennamanh/Documents/flutter/flutter/.pub-cache/hosted/pub.dartlang.org/amazon_s3_cognito-0.6.0/android/src/main/AndroidManifest.xml:3:22-64
 8
 9</manifest>

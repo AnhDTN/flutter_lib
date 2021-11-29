@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/namanh/Documents/flutter/flutter_lib/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-pl/values-pl.xml",
+            "outputFile": "/Users/doantiennamanh/Documents/flutter/flutter_lib/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-pl/values-pl.xml",
             "map": [
                 {
-                    "source": "/Users/namanh/.gradle/caches/transforms-2/files-2.1/2e94107f30f39be366a17347c2bf100b/core-1.1.0/res/values-pl/values-pl.xml",
+                    "source": "/Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/2e94107f30f39be366a17347c2bf100b/core-1.1.0/res/values-pl/values-pl.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
