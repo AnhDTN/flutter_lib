@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_lib/resources/colors.dart';
 
 class TextStyles {
-  static final TextStyles _singleton = new TextStyles._internal();
+  static final TextStyles _singleton = TextStyles._internal();
 
   factory TextStyles() {
     return _singleton;

@@ -9,13 +9,14 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 class DialogManager extends StatefulWidget {
   final Widget child;
 
-  DialogManager({Key? key, required this.child}) : super(key: key);
+  const DialogManager({Key? key, required this.child}) : super(key: key);
 
+  @override
   _DialogManagerState createState() => _DialogManagerState();
 }
 
 class _DialogManagerState extends State<DialogManager> {
-  DialogService _dialogService = GetIt.I.get<DialogService>();
+  final DialogService _dialogService = GetIt.I.get<DialogService>();
 
   @override
   void initState() {
@@ -38,10 +39,10 @@ class _DialogManagerState extends State<DialogManager> {
         builder: (context) => AlertDialog(
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(4)),
-              contentPadding: EdgeInsets.all(16),
-              titlePadding: EdgeInsets.only(top: 16, left: 16, right: 16),
-              buttonPadding: EdgeInsets.all(16),
-              actionsPadding: EdgeInsets.all(0),
+              contentPadding: const EdgeInsets.all(16),
+              titlePadding: const EdgeInsets.only(top: 16, left: 16, right: 16),
+              buttonPadding: const EdgeInsets.all(16),
+              actionsPadding: const EdgeInsets.all(0),
               title: Text(
                 request.title,
                 style: TextStyles.headLine3(context),
@@ -135,9 +136,9 @@ class _DialogManagerState extends State<DialogManager> {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.center,
-                      children: <Widget>[
+                      children: const <Widget>[
                         Padding(
-                          padding: const EdgeInsets.only(bottom: 20),
+                          padding: EdgeInsets.only(bottom: 20),
                           child: Text("Đang tải..."),
                         ),
                         SizedBox(
@@ -161,16 +162,16 @@ class _DialogManagerState extends State<DialogManager> {
         context: context,
         builder: (context) => SimpleDialog(
               children: <Widget>[
-                Container(
+                SizedBox(
                   width: 200,
                   height: 120,
                   child: Center(
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.center,
-                      children: <Widget>[
+                      children: const <Widget>[
                         Padding(
-                          padding: const EdgeInsets.only(bottom: 20),
+                          padding: EdgeInsets.only(bottom: 20),
                           child: Text("Đang tải..."),
                         ),
                         SizedBox(

@@ -4,7 +4,6 @@ import 'package:flutter_lib/extensions/ui.dart';
 import 'package:flutter_lib/resources/image_name.dart';
 import 'package:flutter_lib/resources/route.dart';
 import 'package:flutter_lib/views/router/routing.dart';
-import 'package:page_transition/page_transition.dart';
 
 import 'login_page.dart';
 

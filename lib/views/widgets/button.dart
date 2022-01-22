@@ -75,18 +75,18 @@ class ButtonApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: height,
       width: width ?? MediaQuery.of(context).size.width,
       child: ElevatedButton(
-        onPressed: onPressed ?? null,
+        onPressed: onPressed,
         onLongPress: onLongPressed,
         style: Theme.of(context).elevatedButtonTheme.style!.copyWith(
             backgroundColor: MaterialStateProperty.all<Color>(
                 buttonColor ?? AppColors.red)),
         child: Text(buttonText ?? "BUTTON",
             style: textStyle ?? Theme.of(context).textTheme.button!.copyWith(
-                color: textColor != null ? textColor : AppColors.white)),
+                color: textColor ?? AppColors.white)),
       ),
     );
   }

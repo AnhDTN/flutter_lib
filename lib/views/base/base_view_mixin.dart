@@ -15,22 +15,20 @@ mixin BaseViewStateful<Page extends BaseStatefulWidget>
   Widget _buildWidget(BuildContext context);
 
   Widget _emptyWidget(BuildContext context) {
-    return Container(color: AppColors.white, child: Text("Empty"),);
+    return Container(color: AppColors.white, child: const Text("Empty"),);
   }
 
   Widget _body(BuildContext context) {
-    return Container(color: AppColors.white, child: Text("Hasdata"),);
+    return Container(color: AppColors.white, child: const Text("Hasdata"),);
   }
 
   Widget _errorWidget(BuildContext context) {
-    return Container(color: AppColors.white, child: Text("Error"),);
+    return Container(color: AppColors.white, child: const Text("Error"),);
   }
 
   Widget _loadingWidget(BuildContext context) {
-    return Container(
-      child: Center(
-        child: CircularProgressIndicator(),
-      ),
+    return const Center(
+      child: CircularProgressIndicator(),
     );
   }
 

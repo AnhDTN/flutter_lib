@@ -10,7 +10,7 @@ import 'package:intl/intl.dart';
 import 'package:path/path.dart' as path;
 
 class Helpers {
-  static bool isNumeric(String s) {
+  static bool isNumeric(String? s) {
     if (s == null) {
       return false;
     }
@@ -20,11 +20,11 @@ class Helpers {
   static dynamic getDataModel(json, String key) {
     try {
       final arrayKey = key.split('.');
-      if (arrayKey.length > 0) {
+      if (arrayKey.isNotEmpty) {
         var currentValue = json;
-        arrayKey.forEach((element) {
+        for (var element in arrayKey) {
           currentValue = currentValue[element];
-        });
+        }
         return currentValue;
       }
       return json[key];
@@ -62,15 +62,16 @@ class Helpers {
     var isInRange = (date.difference(startRange).inDays == 0 &&
             date.day == startRange.day) ||
         (date.difference(endRange).inDays == 0 && date.day == endRange.day);
-    if (isInRange == false)
+    if (isInRange == false) {
       isInRange = date.isAfter(startRange) && date.isBefore(endRange);
+    }
     return isInRange;
   }
 
   static String formatString(String string, List<String> args) {
     var finalString = "";
     final arrString = string.split("%@");
-    if (arrString.length == 0) return string;
+    if (arrString.isEmpty) return string;
     arrString.asMap().forEach((index, value) {
       if (index < arrString.length - 1 && index < args.length) {
         finalString += "$value${args[index]}";
@@ -102,10 +103,11 @@ class Helpers {
 
   static String formatDateToStringWithTimeZone(DateTime date) {
     var dur = date.timeZoneOffset;
-    if (dur.isNegative)
+    if (dur.isNegative) {
       return "${DateFormat("y-MM-ddTHH:mm:ss").format(date)}-${dur.inHours.toString().padLeft(2, '0')}:${(dur.inMinutes - (dur.inHours * 60)).toString().padLeft(2, '0')}";
-    else
+    } else {
       return "${DateFormat("y-MM-ddTHH:mm:ss").format(date)}+${dur.inHours.toString().padLeft(2, '0')}:${(dur.inMinutes - (dur.inHours * 60)).toString().padLeft(2, '0')}";
+    }
   }
 
   static double roundDouble(double value, int places) {
@@ -114,7 +116,7 @@ class Helpers {
   }
 
   static Color hexToColor(String code) {
-    return new Color(int.parse(code.substring(1, 7), radix: 16) + 0xFF000000);
+    return Color(int.parse(code.substring(1, 7), radix: 16) + 0xFF000000);
   }
 
   static double maxWidth(BuildContext context) {
@@ -169,7 +171,7 @@ class Helpers {
         var millisecond = dateToMillisecond + timeToMillisecond;
         return DateTime.fromMillisecondsSinceEpoch(millisecond).toLocal().toString();
       } catch (e) {
-          throw e;
+          rethrow;
       }
     }
 

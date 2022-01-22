@@ -1,33 +1,33 @@
 
 class RouteName {
-  static final String loginOtpPage = "loginOtpPage";
-  static final String forgotPassPage = "forgotPassPage";
-  static final String loginPage = "loginPage";
-  static final String updatePasswordPage = "updatePasswordPage";
-  static final String registerOtpPage = "registerOtpPage";
-  static final String registerOutingPage = "registerOutingPage";
-  static final String registerPage = "registerPage";
-  static final String forgotPasswordOtpPage = "forgotPasswordOtpPage";
-  static final String docsDetailsPage = "docsDetailsPage";
-  static final String docsMainPage = "docsMainPage";
-  static final String welcomePage = "welcomePage";
-  static final String registerPracticeDemoPage = "registerPracticeDemoPage";
-  static final String registerPracticeDemoSuccessPage = "registerPracticeDemoSuccessPage";
-  static final String updatePasswordSuccessPage = "updatePasswordSuccessPage";
-  static final String homePage = "homePage";
-  static final String loginUpdateInfoPage = "loginUpdateInfoPage";
-  static final String registerUpdatePasswordPage = "registerUpdatePasswordPage";
-  static final String registerSuccessPage = "registerSuccessPage";
-  static final String courseDetailsPage = "courseDetailsPage";
-  static final String courseListPage = "courseListPage";
-  static final String coachDetailsPage = "coachDetailsPage";
-  static final String coachListPage = "coachListPage";
-  static final String practicePlaceListPage = "practicePlaceListPage";
-  static final String practicePlaceDetailsPage = "practicePlaceDetailsPage";
-  static final String registerCourseStep1Page = "registerCourseStep1Page";
-  static final String registerCourseStep2Page = "registerCourseStep2Page";
-  static final String registerCourseStep3Page = "registerCourseStep3Page";
-  static final String registerCourseSuccessPage = "registerCourseSuccessPage";
+  static const String loginOtpPage = "loginOtpPage";
+  static const String forgotPassPage = "forgotPassPage";
+  static const String loginPage = "loginPage";
+  static const String updatePasswordPage = "updatePasswordPage";
+  static const String registerOtpPage = "registerOtpPage";
+  static const String registerOutingPage = "registerOutingPage";
+  static const String registerPage = "registerPage";
+  static const String forgotPasswordOtpPage = "forgotPasswordOtpPage";
+  static const String docsDetailsPage = "docsDetailsPage";
+  static const String docsMainPage = "docsMainPage";
+  static const String welcomePage = "welcomePage";
+  static const String registerPracticeDemoPage = "registerPracticeDemoPage";
+  static const String registerPracticeDemoSuccessPage = "registerPracticeDemoSuccessPage";
+  static const String updatePasswordSuccessPage = "updatePasswordSuccessPage";
+  static const String homePage = "homePage";
+  static const String loginUpdateInfoPage = "loginUpdateInfoPage";
+  static const String registerUpdatePasswordPage = "registerUpdatePasswordPage";
+  static const String registerSuccessPage = "registerSuccessPage";
+  static const String courseDetailsPage = "courseDetailsPage";
+  static const String courseListPage = "courseListPage";
+  static const String coachDetailsPage = "coachDetailsPage";
+  static const String coachListPage = "coachListPage";
+  static const String practicePlaceListPage = "practicePlaceListPage";
+  static const String practicePlaceDetailsPage = "practicePlaceDetailsPage";
+  static const String registerCourseStep1Page = "registerCourseStep1Page";
+  static const String registerCourseStep2Page = "registerCourseStep2Page";
+  static const String registerCourseStep3Page = "registerCourseStep3Page";
+  static const String registerCourseSuccessPage = "registerCourseSuccessPage";
 
 
 }

@@ -7,7 +7,7 @@ class ScaffoldExtView extends StatelessWidget {
   final double? width;
   final double? height;
 
-  ScaffoldExtView({this.appBar, required this.body, this.width, this.height});
+  ScaffoldExtView({Key? key, this.appBar, required this.body, this.width, this.height}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

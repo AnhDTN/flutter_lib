@@ -41,7 +41,7 @@ class ButtonUnderLineView extends StatelessWidget {
             ),
           ),
           child: Text(
-            '$text',
+            text,
             style: textStyle ?? TextStyles.buttonRed(context),
           ),
         )

@@ -26,14 +26,14 @@ class _BottomMenuState extends State<BottomMenu> {
     return Scaffold(
         bottomNavigationBar: BottomNavigationBar(
           currentIndex: context.watch<BottomMenuProvider>().index,
-          selectedLabelStyle: TextStyle(color: Colors.red),
+          selectedLabelStyle: const TextStyle(color: Colors.red),
           showUnselectedLabels: true,
           unselectedItemColor: Colors.black,
           selectedItemColor: Colors.red,
           unselectedIconTheme:
-          IconThemeData(color: Colors.black),
+          const IconThemeData(color: Colors.black),
           selectedIconTheme:
-          IconThemeData(color: Colors.red),
+          const IconThemeData(color: Colors.red),
           onTap: (int index) {
             context.read<BottomMenuProvider>().indexBottomBarChange(index);
           },

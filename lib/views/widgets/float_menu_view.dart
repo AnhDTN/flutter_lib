@@ -41,7 +41,7 @@ class _FloatMenuViewState extends State<FloatMenuView>
             padding: const EdgeInsets.only(left: 6),
             child: Text(
               title,
-              style: TextStyle(color: Colors.red),
+              style: const TextStyle(color: Colors.red),
             ),
           ),
         ],
@@ -109,7 +109,7 @@ class _FloatMenuViewState extends State<FloatMenuView>
 }
 
 class SpeedDial extends StatefulWidget {
-  const SpeedDial({
+  const SpeedDial({Key? key,
     this.child,
     this.speedDialChildren,
     this.labelsStyle,
@@ -118,7 +118,7 @@ class SpeedDial extends StatefulWidget {
     this.openForegroundColor,
     this.closedBackgroundColor,
     this.openBackgroundColor,
-  });
+  }) : super(key: key);
 
   final Widget? child;
 
@@ -255,7 +255,7 @@ class _SpeedDialState extends State<SpeedDial>
                     );
                     speedDialChildAnimationIndex++;
                     return speedDialChildWidget;
-                  })?.toList() ??
+                  }).toList() ??
                   <Widget>[],
             ),
           ),

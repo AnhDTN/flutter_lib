@@ -15,7 +15,7 @@ class ListPage extends StatefulWidget {
 }
 
 class _ListPageState extends State<ListPage> {
-  RefreshController _refreshController = RefreshController();
+  final RefreshController _refreshController = RefreshController();
 
   void _onLoading(int page) async {
     context.read<AppProvider>().getJobs(page);

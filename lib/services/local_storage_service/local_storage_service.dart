@@ -3,12 +3,12 @@ import 'package:flutter_lib/model/language.dart';
 import 'package:hive/hive.dart';
 
 class StorageService {
-  String _firstRun = "firstRun";
-  String _currentUser = "currentUser";
-  String _theme = "theme";
-  String _language = "language";
+  final String _firstRun = "firstRun";
+  final String _currentUser = "currentUser";
+  final String _theme = "theme";
+  final String _language = "language";
 
-  Box _appBox;
+  final Box _appBox;
   StorageService(
       {required Box appBox})
       : _appBox = appBox;

@@ -12,10 +12,10 @@ class DialogNotification extends StatelessWidget {
   Widget build(BuildContext context) {
     return AlertDialog(
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
-      contentPadding: EdgeInsets.all(0),
-      titlePadding: EdgeInsets.all(0),
-      buttonPadding: EdgeInsets.all(0),
-      actionsPadding: EdgeInsets.all(0),
+      contentPadding: const EdgeInsets.all(0),
+      titlePadding: const EdgeInsets.all(0),
+      buttonPadding: const EdgeInsets.all(0),
+      actionsPadding: const EdgeInsets.all(0),
       content: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
@@ -27,7 +27,7 @@ class DialogNotification extends StatelessWidget {
                   onTap: () {
                     Navigator.of(context).pop();
                   },
-                  child: Icon(Icons.close, size: 20,),
+                  child: const Icon(Icons.close, size: 20,),
                 )),
           ),
           Image.asset(
@@ -66,7 +66,7 @@ class DialogNotification extends StatelessWidget {
                           Navigator.of(context).pop();
                         }
                       },
-                      child: Text(
+                      child: const Text(
                         "Xác nhận",
                         ),
                       ),

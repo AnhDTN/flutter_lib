@@ -65,7 +65,7 @@ class _CircleImageViewState extends State<CircleImageView> {
       width: widget.width,
       height: widget.height,
       child: ClipRRect(
-          borderRadius: BorderRadius.all(Radius.circular(1000)),
+          borderRadius: BorderRadius.all(const Radius.circular(1000)),
           child: Image.network(
             widget.imageUrl!,
             width: widget.width,

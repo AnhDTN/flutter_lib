@@ -29,7 +29,7 @@ ThemeData lightTheme = ThemeData(
       )),
   elevatedButtonTheme: ElevatedButtonThemeData(
       style: ButtonStyle(
-          textStyle: MaterialStateProperty.all<TextStyle>(TextStyle(
+          textStyle: MaterialStateProperty.all<TextStyle>(const TextStyle(
               color: AppColors.white,
               fontSize: 16,
               fontWeight: FontWeight.w500)),
@@ -44,15 +44,15 @@ ThemeData lightTheme = ThemeData(
                   borderRadius: BorderRadius.circular(4))))),
   outlinedButtonTheme: OutlinedButtonThemeData(
       style: OutlinedButton.styleFrom(
-        side: BorderSide(
+        side: const BorderSide(
           color: AppColors.redDark,
         ),
-        textStyle: TextStyle(
+        textStyle: const TextStyle(
             color: AppColors.redDark,
             fontSize: 16,
             fontWeight: FontWeight.w500),
       )),
-  textTheme: TextTheme(
+  textTheme: const TextTheme(
     headline1: TextStyle(
       color: AppColors.black,
       fontSize: 34,
@@ -130,7 +130,7 @@ ThemeData darkTheme = ThemeData(
       )),
   elevatedButtonTheme: ElevatedButtonThemeData(
       style: ButtonStyle(
-          textStyle: MaterialStateProperty.all<TextStyle>(TextStyle(
+          textStyle: MaterialStateProperty.all<TextStyle>(const TextStyle(
               color: AppColors.white,
               fontSize: 16,
               fontWeight: FontWeight.w500)),
@@ -145,15 +145,15 @@ ThemeData darkTheme = ThemeData(
                   borderRadius: BorderRadius.circular(4))))),
   outlinedButtonTheme: OutlinedButtonThemeData(
       style: OutlinedButton.styleFrom(
-        side: BorderSide(
+        side: const BorderSide(
           color: AppColors.blue,
         ),
-        textStyle: TextStyle(
+        textStyle: const TextStyle(
             color: AppColors.redDark,
             fontSize: 16,
             fontWeight: FontWeight.w500),
       )),
-  textTheme: TextTheme(
+  textTheme: const TextTheme(
     headline1: TextStyle(
       color: AppColors.white,
       fontSize: 34,

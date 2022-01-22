@@ -1,11 +1,11 @@
 class ImageName {
-  static final ImageName _singleton = new ImageName._internal();
+  static final ImageName _singleton = ImageName._internal();
 
   factory ImageName() {
     return _singleton;
   }
 
-  static final logo = "assets/images/placeholder.png";
+  static const logo = "assets/images/placeholder.png";
 
   ImageName._internal();
 }

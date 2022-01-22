@@ -2,7 +2,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_lib/resources/colors.dart';
-import 'package:flutter_lib/resources/image_name.dart';
 
 class AlertMessageDialog extends StatelessWidget {
   final String? title;
@@ -28,10 +27,10 @@ class AlertMessageDialog extends StatelessWidget {
   Widget build(BuildContext context) {
     return AlertDialog(
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
-      contentPadding: EdgeInsets.all(0),
-      titlePadding: EdgeInsets.all(0),
-      buttonPadding: EdgeInsets.all(0),
-      actionsPadding: EdgeInsets.all(0),
+      contentPadding: const EdgeInsets.all(0),
+      titlePadding: const EdgeInsets.all(0),
+      buttonPadding: const EdgeInsets.all(0),
+      actionsPadding: const EdgeInsets.all(0),
       content: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
@@ -43,12 +42,12 @@ class AlertMessageDialog extends StatelessWidget {
                   onTap: () {
                     Navigator.of(context).pop();
                   },
-                  child: Icon(Icons.close, size: 24,),
+                  child: const Icon(Icons.close, size: 24,),
                 )),
           ),
           image != null
-              ? Icon(Icons.done, size: 80, color: AppColors.green,)
-              : SizedBox(),
+              ? const Icon(Icons.done, size: 80, color: AppColors.green,)
+              : const SizedBox(),
           Padding(
             padding: const EdgeInsets.only(top: 24, bottom: 10),
             child: Text(
@@ -107,7 +106,7 @@ class AlertMessageDialog extends StatelessWidget {
                               .bodyText1!
                               .copyWith(color: AppColors.green),
                         ))
-                    : SizedBox(),
+                    : const SizedBox(),
               ],
             ),
           )
@@ -142,18 +141,18 @@ class _DialogMessageState extends State<DialogMessage> {
       content: Text(widget.message),
       actions: <Widget>[
         ElevatedButton(
-            onPressed: widget.func != null
-                ? widget.func
-                : () {
+            onPressed: widget.func ?? () {
                     Navigator.of(context).pop();
                   },
-            child: Text("Ok"))
+            child: const Text("Ok"))
       ],
     );
   }
 }
 
 class DialogLoading extends StatefulWidget {
+  const DialogLoading({Key? key}) : super(key: key);
+
   @override
   _DialogLoadingState createState() => _DialogLoadingState();
 }
@@ -163,16 +162,16 @@ class _DialogLoadingState extends State<DialogLoading> {
   Widget build(BuildContext context) {
     return SimpleDialog(
       children: <Widget>[
-        Container(
+        SizedBox(
           width: 200,
           height: 120,
           child: Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
-              children: <Widget>[
+              children: const <Widget>[
                 Padding(
-                  padding: const EdgeInsets.only(bottom: 20),
+                  padding: EdgeInsets.only(bottom: 20),
                   child: Text("Đang tải..."),
                 ),
                 SizedBox(
@@ -202,26 +201,26 @@ class _AlertDialogConfirmState extends State<AlertDialogConfirm> {
   Widget build(BuildContext context) {
     return AlertDialog(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
-        contentPadding: EdgeInsets.all(0),
-        titlePadding: EdgeInsets.all(0),
-        buttonPadding: EdgeInsets.all(0),
-        actionsPadding: EdgeInsets.all(0),
+        contentPadding: const EdgeInsets.all(0),
+        titlePadding: const EdgeInsets.all(0),
+        buttonPadding: const EdgeInsets.all(0),
+        actionsPadding: const EdgeInsets.all(0),
         content: Container(
-          padding: EdgeInsets.only(top: 20, bottom: 5),
+          padding: const EdgeInsets.only(top: 20, bottom: 5),
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              Text("Confirm ?"),
+              const Text("Confirm ?"),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   TextButton(
-                      onPressed: widget.onConfirmFunction, child: Text("Có")),
+                      onPressed: widget.onConfirmFunction, child: const Text("Có")),
                   TextButton(
                       onPressed: () {
                         Navigator.of(context).pop();
                       },
-                      child: Text("Không"))
+                      child: const Text("Không"))
                 ],
               )
             ],

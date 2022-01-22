@@ -1,4 +1,4 @@
-#Mon Nov 29 09:21:01 ICT 2021
+#Sat Jan 22 09:56:53 ICT 2022
 base.1=/Users/doantiennamanh/Documents/flutter/flutter_lib/build/app/intermediates/dex/debug/mergeDexDebug/classes2.dex
 path.1=classes2.dex
 base.0=/Users/doantiennamanh/Documents/flutter/flutter_lib/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex

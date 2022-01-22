@@ -63,14 +63,14 @@ class GraphAPI {
         if(result.exception!.graphqlErrors.isNotEmpty) {
           throw result.exception!.graphqlErrors[0];
         } else {
-          throw GraphQLError(message: "Something went wrong");
+          throw const GraphQLError(message: "Something went wrong");
         }
       } else {
         log("RESPONSE: ${result.data}");
         return GraphQlResponse(200, null, result.data);
       }
     } on GraphQLError catch (e) {
-      throw e;
+      rethrow;
     }
   }
 }

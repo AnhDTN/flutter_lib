@@ -46,7 +46,7 @@ class _TextInputState extends State<TextInput> {
       child: Container(
         height: widget.height,
         width: MediaQuery.of(context).size.width,
-        padding: EdgeInsets.all(2),
+        padding: const EdgeInsets.all(2),
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(4),
             color: AppColors.white,
@@ -74,7 +74,7 @@ class _TextInputState extends State<TextInput> {
                     .textTheme
                     .bodyText1!
                     .copyWith(color: AppColors.gray4),
-                contentPadding: EdgeInsets.only(top: 16, left: 16, right: 16, bottom: 16),
+                contentPadding: const EdgeInsets.only(top: 16, left: 16, right: 16, bottom: 16),
                 filled: true,
                 fillColor: AppColors.white,
                 hoverColor: AppColors.white,
@@ -141,7 +141,7 @@ class TextLabelInput extends StatefulWidget {
 
 class _TextLabelInputState extends State<TextLabelInput> {
 
-  var _focusNode =  FocusNode();
+  final _focusNode =  FocusNode();
   Color _color = AppColors.gray4;
   @override
   void initState() {
@@ -166,7 +166,7 @@ class _TextLabelInputState extends State<TextLabelInput> {
       child: Container(
         height: widget.height,
         width: MediaQuery.of(context).size.width,
-        padding: EdgeInsets.all(2),
+        padding: const EdgeInsets.all(2),
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(4),
             color: AppColors.white,
@@ -195,7 +195,7 @@ class _TextLabelInputState extends State<TextLabelInput> {
                     .textTheme
                     .bodyText1!
                     .copyWith(color: AppColors.gray2),
-                contentPadding: EdgeInsets.only(top: 8, left: 16, bottom: 8),
+                contentPadding: const EdgeInsets.only(top: 8, left: 16, bottom: 8),
                 filled: true,
                 border: InputBorder.none,
                 fillColor: AppColors.white,

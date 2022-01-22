@@ -19,11 +19,11 @@ class AppApi {
     return _singleton;
   }
 
-  static var _dio = Dio(BaseOptions(
+  static final _dio = Dio(BaseOptions(
     connectTimeout: 30000,
     receiveTimeout: 15000,
   ));
-  static Api _client = Api(_dio, baseUrl: AppConfig.baseRestfulUrl);
+  static final Api _client = Api(_dio, baseUrl: AppConfig.baseRestfulUrl);
 
   static Api getClient() => _client;
 

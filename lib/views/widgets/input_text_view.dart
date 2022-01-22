@@ -71,13 +71,13 @@ class _InputTextOutlineState extends State<InputTextOutline> {
         decoration: InputDecoration(
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(4.0),
-            borderSide: BorderSide(
+            borderSide: const BorderSide(
               color: AppColors.border,
             ),
           ),
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(4.0),
-            borderSide: BorderSide(
+            borderSide: const BorderSide(
               color: AppColors.border,
             ),
           ),

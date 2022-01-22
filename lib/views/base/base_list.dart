@@ -17,7 +17,7 @@ class BaseList<T> extends SingleChildStatelessWidget {
 
   final Widget Function(BuildContext context, T value, Widget? child) builder;
 
-  BaseList({Key? key,
+  const BaseList({Key? key,
     this.header,
     this.footer,
     Widget? child,
@@ -53,11 +53,11 @@ class BaseList<T> extends SingleChildStatelessWidget {
       controller: refreshController,
       onRefresh: _onRefresh,
       onLoading: _onLoading,
-      header: WaterDropHeader(
+      header: const WaterDropHeader(
         refresh: CupertinoActivityIndicator(),
         complete: SizedBox(),
       ),
-      footer: ClassicFooter(
+      footer: const ClassicFooter(
         loadingText: "",
         canLoadingText: "",
         idleText: "",

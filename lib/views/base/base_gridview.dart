@@ -54,11 +54,11 @@ class BaseGridView<T> extends SingleChildStatelessWidget {
         controller: refreshController,
         onRefresh: _onRefresh,
         onLoading: _onLoading,
-        header: WaterDropHeader(
+        header: const WaterDropHeader(
           refresh: CupertinoActivityIndicator(),
           complete: SizedBox(),
         ),
-        footer: ClassicFooter(
+        footer: const ClassicFooter(
           loadingText: "",
           canLoadingText: "",
           idleText: "",

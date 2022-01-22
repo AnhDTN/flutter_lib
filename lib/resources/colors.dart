@@ -1,7 +1,7 @@
 import 'dart:ui';
 
 class AppColors {
-  static final AppColors _singleton = new AppColors._internal();
+  static final AppColors _singleton = AppColors._internal();
 
   factory AppColors() {
     return _singleton;

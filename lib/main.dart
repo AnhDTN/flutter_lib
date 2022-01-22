@@ -5,18 +5,16 @@ import 'package:flutter/services.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_lib/model/language.dart';
 import 'package:flutter_lib/providers/app_provider.dart';
-import 'package:flutter_lib/resources/colors.dart';
 import 'package:flutter_lib/resources/constants.dart';
 import 'package:flutter_lib/resources/themes.dart';
 import 'package:flutter_lib/services/app_service/dialog_service/dialog_manager.dart';
 import 'package:flutter_lib/services/app_service/dialog_service/dialog_service.dart';
 import 'package:flutter_lib/services/local_storage_service/local_storage_service.dart';
-import 'package:flutter_lib/views/page/home_page.dart';
 import 'package:flutter_lib/views/page/splash_page.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:get_it/get_it.dart';
 import 'package:provider/provider.dart';
-import 'package:path_provider/path_provider.dart' as pathProvider;
+import 'package:path_provider/path_provider.dart' as path_provider;
 import 'package:hive/hive.dart';
 
 import 'model/account.dart';
@@ -37,7 +35,7 @@ void main() async {
 }
 
 Future<void> setUp() async {
-  Directory directory = await pathProvider.getApplicationDocumentsDirectory();
+  Directory directory = await path_provider.getApplicationDocumentsDirectory();
   Hive
     ..init(directory.path)
     ..registerAdapter(AccountAdapter())
@@ -48,7 +46,7 @@ Future<void> setUp() async {
 }
 
 class MyApp extends StatefulWidget {
-  MyApp({Key? key, required this.title}) : super(key: key);
+  const MyApp({Key? key, required this.title}) : super(key: key);
   final String title;
 
   @override

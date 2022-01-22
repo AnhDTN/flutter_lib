@@ -57,7 +57,7 @@ class ExpandableTextState extends State<ExpandableText> {
           textSize.height,
         ));
         endIndex = textPainter.getOffsetBefore(pos.offset);
-        var textSpan;
+        TextSpan textSpan;
         if (textPainter.didExceedMaxLines) {
           textSpan = TextSpan(
             text: _readMore ? widget.text.substring(0, endIndex) : widget.text,

@@ -6,7 +6,7 @@ class SvgIcons extends StatefulWidget {
   final double? size;
   final Color? color;
 
-  SvgIcons({Key? key, required this.icon, this.size, this.color})
+  const SvgIcons({Key? key, required this.icon, this.size, this.color})
       : super(key: key);
 
   @override
@@ -26,7 +26,7 @@ class _SvgIconsState extends State<SvgIcons> {
       widget.icon!,
       height: widget.size,
       width: widget.size,
-      color: widget.color ?? null,
+      color: widget.color,
     );
   }
 }

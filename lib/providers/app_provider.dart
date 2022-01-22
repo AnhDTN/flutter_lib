@@ -10,8 +10,8 @@ class AppProvider extends ChangeNotifier {
     initApp();
   }
 
-  JobRepo _jobRepo = JobRepo();
-  StorageService _storageService = GetIt.I.get<StorageService>();
+  final JobRepo _jobRepo = JobRepo();
+  final StorageService _storageService = GetIt.I.get<StorageService>();
 
   LanguageApp _languageApp = LanguageApp.en;
   LanguageApp get languageApp => _languageApp;

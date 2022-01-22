@@ -82,16 +82,16 @@ class _AutoCompleteSearchMasterDataState
         decoration: InputDecoration(
           hintText: widget.hintText,
           border: OutlineInputBorder(
-              borderSide: BorderSide(width: 1, color: AppColors.gray4),
+              borderSide: const BorderSide(width: 1, color: AppColors.gray4),
               borderRadius: BorderRadius.circular(4)),
           enabledBorder: OutlineInputBorder(
-              borderSide: BorderSide(width: 1, color: AppColors.gray4),
+              borderSide: const BorderSide(width: 1, color: AppColors.gray4),
               borderRadius: BorderRadius.circular(4)),
           focusedBorder: OutlineInputBorder(
-              borderSide: BorderSide(width: 1, color: AppColors.green),
+              borderSide: const BorderSide(width: 1, color: AppColors.green),
               borderRadius: BorderRadius.circular(4)),
           disabledBorder: OutlineInputBorder(
-              borderSide: BorderSide(width: 1, color: AppColors.gray4),
+              borderSide: const BorderSide(width: 1, color: AppColors.gray4),
               borderRadius: BorderRadius.circular(4)),
         ),
       ),
@@ -107,7 +107,7 @@ class _AutoCompleteSearchMasterDataState
       child: SizedBox(
           height: MediaQuery.of(context).size.height,
           child: ListView.builder(
-              padding: EdgeInsets.only(top: 20, bottom: 200),
+              padding: const EdgeInsets.only(top: 20, bottom: 200),
               itemCount: options.length,
               itemBuilder: (context, index) {
                 return GestureDetector(
@@ -127,7 +127,7 @@ class _AutoCompleteSearchMasterDataState
                             style: Theme.of(context).textTheme.bodyText1,
                           ),
                         ),
-                        Divider(
+                        const Divider(
                           height: 1,
                           thickness: 1,
                           color: AppColors.gray2,
@@ -207,16 +207,16 @@ class _AutoCompleteSearchLocationState
         decoration: InputDecoration(
           hintText: widget.hintText,
           border: OutlineInputBorder(
-              borderSide: BorderSide(width: 1, color: AppColors.gray4),
+              borderSide: const BorderSide(width: 1, color: AppColors.gray4),
               borderRadius: BorderRadius.circular(4)),
           enabledBorder: OutlineInputBorder(
-              borderSide: BorderSide(width: 1, color: AppColors.gray4),
+              borderSide: const BorderSide(width: 1, color: AppColors.gray4),
               borderRadius: BorderRadius.circular(4)),
           focusedBorder: OutlineInputBorder(
-              borderSide: BorderSide(width: 1, color: AppColors.gray4),
+              borderSide: const BorderSide(width: 1, color: AppColors.gray4),
               borderRadius: BorderRadius.circular(4)),
           disabledBorder: OutlineInputBorder(
-              borderSide: BorderSide(width: 1, color: AppColors.gray4),
+              borderSide: const BorderSide(width: 1, color: AppColors.gray4),
               borderRadius: BorderRadius.circular(4)),
         ),
       ),
@@ -230,7 +230,7 @@ class _AutoCompleteSearchLocationState
     return ColoredBox(
       color: AppColors.white,
       child: ListView.builder(
-          padding: EdgeInsets.only(top: 20, bottom: 200),
+          padding: const EdgeInsets.only(top: 20, bottom: 200),
           itemCount: options.length,
           itemBuilder: (context, index) {
             return GestureDetector(
@@ -250,7 +250,7 @@ class _AutoCompleteSearchLocationState
                         style: Theme.of(context).textTheme.bodyText1,
                       ),
                     ),
-                    Divider(
+                    const Divider(
                       height: 1,
                       thickness: 1,
                       color: AppColors.gray4,
@@ -297,7 +297,7 @@ class _SelectedWidgetState extends State<SelectedWidget> {
         );
       }).toList(),
       value: _dropdownValue,
-      icon: Icon(Icons.expand_less, size: 24,),
+      icon: const Icon(Icons.expand_less, size: 24,),
       hint: Text(widget.hintText),
       iconSize: 24,
       elevation: 16,

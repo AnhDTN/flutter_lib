@@ -70,7 +70,7 @@ class _OtpViewState extends State<OtpView> {
             Text(
               widget.title!,
               textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+              style: const TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
             ),
           Padding(
             padding: const EdgeInsets.only(top: 16),
@@ -81,21 +81,21 @@ class _OtpViewState extends State<OtpView> {
           ),
           widget.hasError
               ? Padding(
-                  padding: EdgeInsets.only(top: 32),
+                  padding: const EdgeInsets.only(top: 32),
                   child: Text(
                     AppLocalizations.of(context)!.failsPleaseInputAgain,
                     textAlign: TextAlign.center,
                     style: TextStyles.body1Red(context),
                   ))
               : Padding(
-                  padding: EdgeInsets.only(top: 32),
+                  padding: const EdgeInsets.only(top: 32),
                   child: Text(
                     "Vui lòng điền mã xác thực trong ... ${timeExpire}s",
                     textAlign: TextAlign.center,
                     style: TextStyles.body1(context),
                   )),
           Padding(
-            padding: EdgeInsets.only(top: 12),
+            padding: const EdgeInsets.only(top: 12),
             child: Form(
               key: _formKey,
               child: PinCodeTextField(
@@ -117,7 +117,7 @@ class _OtpViewState extends State<OtpView> {
                     disabledColor: Colors.black87,
                     inactiveFillColor: Colors.white),
                 cursorColor: Colors.black,
-                animationDuration: Duration(milliseconds: 300),
+                animationDuration: const Duration(milliseconds: 300),
                 animationType: AnimationType.fade,
                 enableActiveFill: true,
                 errorAnimationController: _errorController,
@@ -133,11 +133,11 @@ class _OtpViewState extends State<OtpView> {
               _startTimer();
             },
             child: Container(
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                   border:
                       Border(bottom: BorderSide(width: 1, color: Colors.red))),
-              child: Padding(
-                padding: const EdgeInsets.only(top: 24),
+              child: const Padding(
+                padding: EdgeInsets.only(top: 24),
                 child: Text(
                   "Gửi lại mã xác thực cho tôi",
                   style: TextStyle(color: Colors.red),
@@ -160,7 +160,7 @@ class _OtpViewState extends State<OtpView> {
 
   void _startTimer() {
     if (_timer != null && _timer!.isActive) _timer!.cancel();
-    _timer = Timer.periodic(Duration(seconds: 1), (timer) {
+    _timer = Timer.periodic(const Duration(seconds: 1), (timer) {
       if (timeExpire > 0) {
         setState(() {
           timeExpire -= 1;

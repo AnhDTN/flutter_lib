@@ -5,26 +5,34 @@ INJECTED from /Users/doantiennamanh/Documents/flutter/flutter_lib/android/app/sr
 INJECTED from /Users/doantiennamanh/Documents/flutter/flutter_lib/android/app/src/main/AndroidManifest.xml:1:1-41:12
 INJECTED from /Users/doantiennamanh/Documents/flutter/flutter_lib/android/app/src/main/AndroidManifest.xml:1:1-41:12
 MERGED from /Users/doantiennamanh/Documents/flutter/flutter_lib/android/app/src/main/AndroidManifest.xml:1:1-41:12
+MERGED from [:connectivity] /Users/doantiennamanh/Documents/flutter/flutter_lib/build/connectivity/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:path_provider] /Users/doantiennamanh/Documents/flutter/flutter_lib/build/path_provider/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:connectivity_plus] /Users/doantiennamanh/Documents/flutter/flutter_lib/build/connectivity_plus/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:amazon_s3_cognito] /Users/doantiennamanh/Documents/flutter/flutter_lib/build/amazon_s3_cognito/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.multidex:multidex:2.0.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/e0c80cb72d282da5b4cd1966a30d3891/multidex-2.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [com.amazonaws:aws-android-sdk-s3:2.19.1] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/0624e47247fa2243fc6038ceda030c45/jetified-aws-android-sdk-s3-2.19.1/AndroidManifest.xml:2:1-13:12
-MERGED from [com.amazonaws:aws-android-sdk-kms:2.19.1] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/ad38e6fb47cae58f3f8497d7d4c38cc0/jetified-aws-android-sdk-kms-2.19.1/AndroidManifest.xml:2:1-11:12
-MERGED from [com.amazonaws:aws-android-sdk-core:2.19.1] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/894a1d1a0f1e45d6d6cf1c89d7615f50/jetified-aws-android-sdk-core-2.19.1/AndroidManifest.xml:2:1-17:12
+MERGED from [com.amazonaws:aws-android-sdk-s3:2.32.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/383c820a1f53501967457f57c59f0952/jetified-aws-android-sdk-s3-2.32.0/AndroidManifest.xml:2:1-12:12
+MERGED from [com.amazonaws:aws-android-sdk-kms:2.32.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/7528abe27a52e76d0ca5c59d314b0801/jetified-aws-android-sdk-kms-2.32.0/AndroidManifest.xml:2:1-10:12
+MERGED from [com.amazonaws:aws-android-sdk-core:2.32.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/0ed7ecc22fee73d382ba7d6d42d98154/jetified-aws-android-sdk-core-2.32.0/AndroidManifest.xml:2:1-16:12
+MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/5cc10fa79d98a6363adab29f7c5f3eea/appcompat-1.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.fragment:fragment:1.1.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/2fd9120a6da4df3dbabdd40f6a2d8995/fragment-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.activity:activity:1.0.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/68dbf8ea01a1dbd974fc87b5753550f0/jetified-activity-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/eb26273f8f7192460456ce62b9bdf9ef/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.loader:loader:1.0.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/d9536c14ffde0b7289f12ba6def6bfa4/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/93b67ce77e3018bae7dcfb3d9df971c2/jetified-appcompat-resources-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/a71638e40cbd9c9c6e5d2d7449ca53dd/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.customview:customview:1.0.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/bc28a09d8d2212ffd5788fe6c1853326/customview-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.core:core:1.1.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/2e94107f30f39be366a17347c2bf100b/core-1.1.0/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/a59d1de1f299e68c5b049a432ccfd655/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/42415d22b488b741b7e8fbc712464c00/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.3.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/a69d6fcd21e670073cd9cab171299398/core-1.3.0/AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/ca6b214160bd0909b103aa12202ef51c/lifecycle-runtime-2.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/2271d874344878e62b9a8e309af0c39d/jetified-savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/fb333fb43575d8a3b51161295454427f/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/cad25976877a6ae855ef6821534f58a1/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/5f606c30f064eed94124828de37fadc0/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/96aee308bccd03bc62c306516c23a410/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/c39070be4a8b092ae5970162a829e305/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/15792e6083b2b5b5a7ffa285d47daa24/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/b962778313a0e23f9ca3dbafc012c1af/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
 INJECTED from /Users/doantiennamanh/Documents/flutter/flutter_lib/android/app/src/debug/AndroidManifest.xml:1:1-7:12
 INJECTED from /Users/doantiennamanh/Documents/flutter/flutter_lib/android/app/src/debug/AndroidManifest.xml:1:1-7:12
 INJECTED from /Users/doantiennamanh/Documents/flutter/flutter_lib/android/app/src/debug/AndroidManifest.xml:1:1-7:12
@@ -44,14 +52,14 @@ INJECTED from /Users/doantiennamanh/Documents/flutter/flutter_lib/android/app/sr
 		ADDED from /Users/doantiennamanh/Documents/flutter/flutter_lib/android/app/src/main/AndroidManifest.xml:1:11-69
 application
 ADDED from /Users/doantiennamanh/Documents/flutter/flutter_lib/android/app/src/main/AndroidManifest.xml:3:4-40:19
-MERGED from [com.amazonaws:aws-android-sdk-core:2.19.1] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/894a1d1a0f1e45d6d6cf1c89d7615f50/jetified-aws-android-sdk-core-2.19.1/AndroidManifest.xml:11:5-15:19
-MERGED from [com.amazonaws:aws-android-sdk-core:2.19.1] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/894a1d1a0f1e45d6d6cf1c89d7615f50/jetified-aws-android-sdk-core-2.19.1/AndroidManifest.xml:11:5-15:19
-MERGED from [androidx.core:core:1.1.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/2e94107f30f39be366a17347c2bf100b/core-1.1.0/AndroidManifest.xml:24:5-89
-MERGED from [androidx.core:core:1.1.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/2e94107f30f39be366a17347c2bf100b/core-1.1.0/AndroidManifest.xml:24:5-89
+MERGED from [com.amazonaws:aws-android-sdk-core:2.32.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/0ed7ecc22fee73d382ba7d6d42d98154/jetified-aws-android-sdk-core-2.32.0/AndroidManifest.xml:10:5-14:19
+MERGED from [com.amazonaws:aws-android-sdk-core:2.32.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/0ed7ecc22fee73d382ba7d6d42d98154/jetified-aws-android-sdk-core-2.32.0/AndroidManifest.xml:10:5-14:19
+MERGED from [androidx.core:core:1.3.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/a69d6fcd21e670073cd9cab171299398/core-1.3.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.3.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/a69d6fcd21e670073cd9cab171299398/core-1.3.0/AndroidManifest.xml:24:5-89
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/96aee308bccd03bc62c306516c23a410/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/96aee308bccd03bc62c306516c23a410/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.1.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/2e94107f30f39be366a17347c2bf100b/core-1.1.0/AndroidManifest.xml:24:18-86
+		ADDED from [androidx.core:core:1.3.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/a69d6fcd21e670073cd9cab171299398/core-1.3.0/AndroidManifest.xml:24:18-86
 	android:label
 		ADDED from /Users/doantiennamanh/Documents/flutter/flutter_lib/android/app/src/main/AndroidManifest.xml:4:9-36
 	android:icon
@@ -102,6 +110,8 @@ uses-sdk
 INJECTED from /Users/doantiennamanh/Documents/flutter/flutter_lib/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/doantiennamanh/Documents/flutter/flutter_lib/android/app/src/main/AndroidManifest.xml
 INJECTED from /Users/doantiennamanh/Documents/flutter/flutter_lib/android/app/src/main/AndroidManifest.xml
+MERGED from [:connectivity] /Users/doantiennamanh/Documents/flutter/flutter_lib/build/connectivity/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:connectivity] /Users/doantiennamanh/Documents/flutter/flutter_lib/build/connectivity/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:path_provider] /Users/doantiennamanh/Documents/flutter/flutter_lib/build/path_provider/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:path_provider] /Users/doantiennamanh/Documents/flutter/flutter_lib/build/path_provider/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:connectivity_plus] /Users/doantiennamanh/Documents/flutter/flutter_lib/build/connectivity_plus/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
@@ -110,12 +120,14 @@ MERGED from [:amazon_s3_cognito] /Users/doantiennamanh/Documents/flutter/flutter
 MERGED from [:amazon_s3_cognito] /Users/doantiennamanh/Documents/flutter/flutter_lib/build/amazon_s3_cognito/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [androidx.multidex:multidex:2.0.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/e0c80cb72d282da5b4cd1966a30d3891/multidex-2.0.0/AndroidManifest.xml:20:5-43
 MERGED from [androidx.multidex:multidex:2.0.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/e0c80cb72d282da5b4cd1966a30d3891/multidex-2.0.0/AndroidManifest.xml:20:5-43
-MERGED from [com.amazonaws:aws-android-sdk-s3:2.19.1] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/0624e47247fa2243fc6038ceda030c45/jetified-aws-android-sdk-s3-2.19.1/AndroidManifest.xml:7:5-9:41
-MERGED from [com.amazonaws:aws-android-sdk-s3:2.19.1] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/0624e47247fa2243fc6038ceda030c45/jetified-aws-android-sdk-s3-2.19.1/AndroidManifest.xml:7:5-9:41
-MERGED from [com.amazonaws:aws-android-sdk-kms:2.19.1] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/ad38e6fb47cae58f3f8497d7d4c38cc0/jetified-aws-android-sdk-kms-2.19.1/AndroidManifest.xml:7:5-9:41
-MERGED from [com.amazonaws:aws-android-sdk-kms:2.19.1] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/ad38e6fb47cae58f3f8497d7d4c38cc0/jetified-aws-android-sdk-kms-2.19.1/AndroidManifest.xml:7:5-9:41
-MERGED from [com.amazonaws:aws-android-sdk-core:2.19.1] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/894a1d1a0f1e45d6d6cf1c89d7615f50/jetified-aws-android-sdk-core-2.19.1/AndroidManifest.xml:7:5-9:41
-MERGED from [com.amazonaws:aws-android-sdk-core:2.19.1] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/894a1d1a0f1e45d6d6cf1c89d7615f50/jetified-aws-android-sdk-core-2.19.1/AndroidManifest.xml:7:5-9:41
+MERGED from [com.amazonaws:aws-android-sdk-s3:2.32.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/383c820a1f53501967457f57c59f0952/jetified-aws-android-sdk-s3-2.32.0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.amazonaws:aws-android-sdk-s3:2.32.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/383c820a1f53501967457f57c59f0952/jetified-aws-android-sdk-s3-2.32.0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.amazonaws:aws-android-sdk-kms:2.32.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/7528abe27a52e76d0ca5c59d314b0801/jetified-aws-android-sdk-kms-2.32.0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.amazonaws:aws-android-sdk-kms:2.32.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/7528abe27a52e76d0ca5c59d314b0801/jetified-aws-android-sdk-kms-2.32.0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.amazonaws:aws-android-sdk-core:2.32.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/0ed7ecc22fee73d382ba7d6d42d98154/jetified-aws-android-sdk-core-2.32.0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.amazonaws:aws-android-sdk-core:2.32.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/0ed7ecc22fee73d382ba7d6d42d98154/jetified-aws-android-sdk-core-2.32.0/AndroidManifest.xml:6:5-8:41
+MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/5cc10fa79d98a6363adab29f7c5f3eea/appcompat-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/5cc10fa79d98a6363adab29f7c5f3eea/appcompat-1.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.1.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/2fd9120a6da4df3dbabdd40f6a2d8995/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.1.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/2fd9120a6da4df3dbabdd40f6a2d8995/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.activity:activity:1.0.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/68dbf8ea01a1dbd974fc87b5753550f0/jetified-activity-1.0.0/AndroidManifest.xml:20:5-22:41
@@ -124,10 +136,18 @@ MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/doantiennamanh/.gradle/c
 MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/eb26273f8f7192460456ce62b9bdf9ef/viewpager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/d9536c14ffde0b7289f12ba6def6bfa4/loader-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/d9536c14ffde0b7289f12ba6def6bfa4/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/93b67ce77e3018bae7dcfb3d9df971c2/jetified-appcompat-resources-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/93b67ce77e3018bae7dcfb3d9df971c2/jetified-appcompat-resources-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/a71638e40cbd9c9c6e5d2d7449ca53dd/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/a71638e40cbd9c9c6e5d2d7449ca53dd/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.customview:customview:1.0.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/bc28a09d8d2212ffd5788fe6c1853326/customview-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.customview:customview:1.0.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/bc28a09d8d2212ffd5788fe6c1853326/customview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.1.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/2e94107f30f39be366a17347c2bf100b/core-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core:1.1.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/2e94107f30f39be366a17347c2bf100b/core-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/a59d1de1f299e68c5b049a432ccfd655/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/a59d1de1f299e68c5b049a432ccfd655/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/42415d22b488b741b7e8fbc712464c00/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/42415d22b488b741b7e8fbc712464c00/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.3.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/a69d6fcd21e670073cd9cab171299398/core-1.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.3.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/a69d6fcd21e670073cd9cab171299398/core-1.3.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/ca6b214160bd0909b103aa12202ef51c/lifecycle-runtime-2.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/ca6b214160bd0909b103aa12202ef51c/lifecycle-runtime-2.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/2271d874344878e62b9a8e309af0c39d/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
@@ -140,8 +160,12 @@ MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/doantiennamanh/.gradl
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/5f606c30f064eed94124828de37fadc0/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/96aee308bccd03bc62c306516c23a410/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/96aee308bccd03bc62c306516c23a410/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/c39070be4a8b092ae5970162a829e305/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/c39070be4a8b092ae5970162a829e305/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/15792e6083b2b5b5a7ffa285d47daa24/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/15792e6083b2b5b5a7ffa285d47daa24/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/b962778313a0e23f9ca3dbafc012c1af/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/b962778313a0e23f9ca3dbafc012c1af/interpolator-1.0.0/AndroidManifest.xml:20:5-44
 INJECTED from /Users/doantiennamanh/Documents/flutter/flutter_lib/android/app/src/debug/AndroidManifest.xml
 INJECTED from /Users/doantiennamanh/Documents/flutter/flutter_lib/android/app/src/debug/AndroidManifest.xml
 	android:targetSdkVersion
@@ -157,14 +181,16 @@ MERGED from [:amazon_s3_cognito] /Users/doantiennamanh/Documents/flutter/flutter
 	android:name
 		ADDED from /Users/doantiennamanh/Documents/flutter/flutter_lib/android/app/src/debug/AndroidManifest.xml:6:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [:connectivity_plus] /Users/doantiennamanh/Documents/flutter/flutter_lib/build/connectivity_plus/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-79
-MERGED from [com.amazonaws:aws-android-sdk-s3:2.19.1] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/0624e47247fa2243fc6038ceda030c45/jetified-aws-android-sdk-s3-2.19.1/AndroidManifest.xml:11:5-79
-MERGED from [com.amazonaws:aws-android-sdk-s3:2.19.1] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/0624e47247fa2243fc6038ceda030c45/jetified-aws-android-sdk-s3-2.19.1/AndroidManifest.xml:11:5-79
+ADDED from [:connectivity] /Users/doantiennamanh/Documents/flutter/flutter_lib/build/connectivity/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-79
+MERGED from [:connectivity_plus] /Users/doantiennamanh/Documents/flutter/flutter_lib/build/connectivity_plus/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-79
+MERGED from [:connectivity_plus] /Users/doantiennamanh/Documents/flutter/flutter_lib/build/connectivity_plus/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-79
+MERGED from [com.amazonaws:aws-android-sdk-s3:2.32.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/383c820a1f53501967457f57c59f0952/jetified-aws-android-sdk-s3-2.32.0/AndroidManifest.xml:10:5-79
+MERGED from [com.amazonaws:aws-android-sdk-s3:2.32.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/383c820a1f53501967457f57c59f0952/jetified-aws-android-sdk-s3-2.32.0/AndroidManifest.xml:10:5-79
 	android:name
-		ADDED from [:connectivity_plus] /Users/doantiennamanh/Documents/flutter/flutter_lib/build/connectivity_plus/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-76
+		ADDED from [:connectivity] /Users/doantiennamanh/Documents/flutter/flutter_lib/build/connectivity/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-76
 uses-library#org.apache.http.legacy
-ADDED from [com.amazonaws:aws-android-sdk-core:2.19.1] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/894a1d1a0f1e45d6d6cf1c89d7615f50/jetified-aws-android-sdk-core-2.19.1/AndroidManifest.xml:12:9-14:40
+ADDED from [com.amazonaws:aws-android-sdk-core:2.32.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/0ed7ecc22fee73d382ba7d6d42d98154/jetified-aws-android-sdk-core-2.32.0/AndroidManifest.xml:11:9-13:40
 	android:required
-		ADDED from [com.amazonaws:aws-android-sdk-core:2.19.1] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/894a1d1a0f1e45d6d6cf1c89d7615f50/jetified-aws-android-sdk-core-2.19.1/AndroidManifest.xml:14:13-37
+		ADDED from [com.amazonaws:aws-android-sdk-core:2.32.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/0ed7ecc22fee73d382ba7d6d42d98154/jetified-aws-android-sdk-core-2.32.0/AndroidManifest.xml:13:13-37
 	android:name
-		ADDED from [com.amazonaws:aws-android-sdk-core:2.19.1] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/894a1d1a0f1e45d6d6cf1c89d7615f50/jetified-aws-android-sdk-core-2.19.1/AndroidManifest.xml:13:13-50
+		ADDED from [com.amazonaws:aws-android-sdk-core:2.32.0] /Users/doantiennamanh/.gradle/caches/transforms-2/files-2.1/0ed7ecc22fee73d382ba7d6d42d98154/jetified-aws-android-sdk-core-2.32.0/AndroidManifest.xml:12:13-50

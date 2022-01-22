@@ -13,7 +13,7 @@ class ButtonView extends StatelessWidget {
   final void Function()? onTap;
   final double? width;
   final EdgeInsetsGeometry? padding;
-  ButtonView(
+  const ButtonView(
       {this.decoration,
       this.backgroundColor = AppColors.redDark,
       this.textColor = AppColors.white,
@@ -30,7 +30,7 @@ class ButtonView extends StatelessWidget {
         decoration: decoration ??
             BoxDecoration(
                 color: backgroundColor,
-                borderRadius: BorderRadius.all(Radius.circular(8))),
+                borderRadius: const BorderRadius.all(Radius.circular(8))),
         child: ElevatedButton(
           style: Theme.of(context).elevatedButtonTheme.style?.copyWith(
               backgroundColor: MaterialStateProperty.all<Color>(backgroundColor), elevation:  MaterialStateProperty.all<double>(0)),

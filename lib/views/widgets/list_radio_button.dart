@@ -38,7 +38,7 @@ class _ListRadioButtonState extends State<ListRadioButton> {
       },
       itemCount: widget.values.length,
       shrinkWrap: true,
-      physics: NeverScrollableScrollPhysics(),
+      physics: const NeverScrollableScrollPhysics(),
     );
   }
 }
