@@ -92,27 +92,25 @@ class AccountAdapter extends TypeAdapter<Account> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-Account _$AccountFromJson(Map<String, dynamic> json) {
-  return Account(
-    isBlocked: json['is_blocked'] as bool?,
-    isEmailVerified: json['is_email_verified'] as bool?,
-    isEnabled: json['is_enabled'] as bool?,
-    isPhoneVerified: json['is_phone_verified'] as bool?,
-    id: json['id'] as int?,
-    loginFails: json['login_fails'] as int?,
-    status: json['status'] as int?,
-    userType: json['user_type'] as int?,
-    createdDate: json['created_date'] as String?,
-    lastLogin: json['last_login'] as String?,
-    modifiedDate: json['modified_date'] as String?,
-    email: json['email'] as String?,
-    fullName: json['full_name'] as String?,
-    password: json['password'] as String?,
-    phoneNumber: json['phone_number'] as String?,
-    registrationToken: json['registration_token'] as String?,
-    saltKey: json['salt_key'] as String?,
-  );
-}
+Account _$AccountFromJson(Map<String, dynamic> json) => Account(
+      isBlocked: json['is_blocked'] as bool?,
+      isEmailVerified: json['is_email_verified'] as bool?,
+      isEnabled: json['is_enabled'] as bool?,
+      isPhoneVerified: json['is_phone_verified'] as bool?,
+      id: json['id'] as int?,
+      loginFails: json['login_fails'] as int?,
+      status: json['status'] as int?,
+      userType: json['user_type'] as int?,
+      createdDate: json['created_date'] as String?,
+      lastLogin: json['last_login'] as String?,
+      modifiedDate: json['modified_date'] as String?,
+      email: json['email'] as String?,
+      fullName: json['full_name'] as String?,
+      password: json['password'] as String?,
+      phoneNumber: json['phone_number'] as String?,
+      registrationToken: json['registration_token'] as String?,
+      saltKey: json['salt_key'] as String?,
+    );
 
 Map<String, dynamic> _$AccountToJson(Account instance) => <String, dynamic>{
       'is_blocked': instance.isBlocked,

@@ -3,9 +3,8 @@ import 'package:flutter_lib/animations/fade_animation.dart';
 import 'package:flutter_lib/extensions/ui.dart';
 import 'package:flutter_lib/resources/image_name.dart';
 import 'package:flutter_lib/resources/route.dart';
+import 'package:flutter_lib/views/page/home_page.dart';
 import 'package:flutter_lib/views/router/routing.dart';
-
-import 'login_page.dart';
 
 class SplashPage extends StatefulWidget {
   const SplashPage({Key? key}) : super(key: key);
@@ -72,7 +71,7 @@ class _SplashPageState extends State<SplashPage> with TickerProviderStateMixin {
         Tween<double>(begin: 1.0, end: 32.0).animate(_scale2Controller)
           ..addStatusListener((status) {
             if (status == AnimationStatus.completed) {
-              Routing.navigateAnim(context, const LoginPage(),
+              Routing.navigateAnim(context, const HomePage(),
                   routeName: RouteName.loginPage, replace: true);
             }
           });

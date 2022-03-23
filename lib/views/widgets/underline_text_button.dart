@@ -1,6 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_lib/resources/colors.dart';
 import 'package:flutter_lib/resources/text_style.dart';
 
 class ButtonUnderLineView extends StatelessWidget {
@@ -22,7 +20,7 @@ class ButtonUnderLineView extends StatelessWidget {
       this.alignment,
       this.textStyle,
       this.underLineHeight = 1,
-      this.underLineColor = AppColors.red,
+      this.underLineColor = Colors.red,
       this.underLinePadding = 2,
       this.style})
       : super(key: key);

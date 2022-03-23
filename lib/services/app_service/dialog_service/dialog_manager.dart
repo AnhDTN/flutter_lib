@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_lib/resources/colors.dart';
 import 'package:flutter_lib/resources/text_style.dart';
-import 'package:flutter_lib/views/widgets/button_confirm_view.dart';
+import 'package:flutter_lib/views/widgets/button.dart';
 import 'package:get_it/get_it.dart';
 import 'dialog_service.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
@@ -90,7 +89,7 @@ class _DialogManagerState extends State<DialogManager> {
     await showDialog(
         context: context,
         builder: (context) => AlertDialog(
-                backgroundColor: AppColors.white,
+                backgroundColor: Colors.white,
                 title: Text(
                   request.title,
                   style: TextStyles.headLine3(context),

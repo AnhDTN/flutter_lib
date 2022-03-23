@@ -1,8 +1,6 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_lib/model/job.dart';
 import 'package:flutter_lib/providers/app_provider.dart';
-import 'package:flutter_lib/resources/colors.dart';
 import 'package:flutter_lib/views/base/base_gridview.dart';
 import 'package:provider/provider.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
@@ -35,7 +33,7 @@ class _ListPageState extends State<ListPage> {
   Widget build(BuildContext context) {
     var appProvider = context.read<AppProvider>();
     return Scaffold(
-      backgroundColor: AppColors.white,
+      backgroundColor: Colors.white,
       body: Consumer<AppProvider>(builder: (context, state, child) {
         // return BaseList<Job>(
         //   builder: (context, item, child) => _item(item),

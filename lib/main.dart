@@ -19,6 +19,19 @@ import 'package:hive/hive.dart';
 
 import 'model/account.dart';
 
+
+class ImageCached extends ImageCache {
+  @override
+  void clear() {
+    super.clear();
+  }
+}
+
+class CustomWidgetsBinding extends WidgetsFlutterBinding {
+  @override
+  ImageCache createImageCache() => ImageCached();
+}
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await SystemChrome.setPreferredOrientations(
@@ -29,7 +42,7 @@ void main() async {
       providers: [
         ChangeNotifierProvider(create: (context) => AppProvider()),
       ],
-      child: MyApp(
+      child: const MyApp(
         title: 'Base App',
       )));
 }

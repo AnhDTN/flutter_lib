@@ -1,6 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_lib/resources/colors.dart';
 
 class SliverView extends StatelessWidget {
   SliverView(
@@ -34,7 +32,7 @@ class SliverView extends StatelessWidget {
               pinned: true,
               floating: true,
               backgroundColor: colorTween.value,
-              foregroundColor: AppColors.white,
+              foregroundColor: Colors.white,
               forceElevated: true,
               title: appBar,
               flexibleSpace: FlexibleSpaceBar(

@@ -6,13 +6,12 @@ part of 'graphql_response.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-GraphQlResponse _$GraphQlResponseFromJson(Map<String, dynamic> json) {
-  return GraphQlResponse(
-    json['status'] as int,
-    json['message'] as String?,
-    json['data'] as Map<String, dynamic>?,
-  );
-}
+GraphQlResponse _$GraphQlResponseFromJson(Map<String, dynamic> json) =>
+    GraphQlResponse(
+      json['status'] as int,
+      json['message'] as String?,
+      json['data'] as Map<String, dynamic>?,
+    );
 
 Map<String, dynamic> _$GraphQlResponseToJson(GraphQlResponse instance) =>
     <String, dynamic>{

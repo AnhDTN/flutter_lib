@@ -1,7 +1,13 @@
-#Sat Jan 22 09:56:53 ICT 2022
-base.1=/Users/doantiennamanh/Documents/flutter/flutter_lib/build/app/intermediates/dex/debug/mergeDexDebug/classes2.dex
-path.1=classes2.dex
-base.0=/Users/doantiennamanh/Documents/flutter/flutter_lib/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+#Wed Mar 23 14:36:35 ICT 2022
+path.3=classes_1.dex
+path.2=classes_0.dex
+path.1=classes.dex
+path.0=classes.dex
+base.3=/Users/doantiennamanh/Documents/flutter/flutter_lib/build/app/intermediates/dex/debug/mergeLibDexDebug/classes_1.dex
+base.2=/Users/doantiennamanh/Documents/flutter/flutter_lib/build/app/intermediates/dex/debug/mergeLibDexDebug/classes_0.dex
+base.1=/Users/doantiennamanh/Documents/flutter/flutter_lib/build/app/intermediates/dex/debug/mergeProjectDexDebug/classes.dex
+base.0=/Users/doantiennamanh/Documents/flutter/flutter_lib/build/app/intermediates/dex/debug/mergeExtDexDebug/classes.dex
+renamed.3=classes4.dex
+renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
-path.0=classes.dex
