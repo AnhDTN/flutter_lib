@@ -4,6 +4,7 @@ import 'package:flutter_lib/resources/text_style.dart';
 import 'package:flutter_lib/views/widgets/svg_icons.dart';
 import 'package:flutter_lib/views/widgets/top_alert.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:page_transition/page_transition.dart';
 
 mixin BaseView {
   OverlayEntry? _overlayEntry;
@@ -83,19 +84,83 @@ mixin BaseView {
     );
   }
 
-  Future<dynamic> push(BuildContext context, Widget widget) {
-    return Navigator.push(
-      context,
-      MaterialPageRoute(builder: (context) => widget),
-    );
+  static Future<T?> navigateAnim<T>(BuildContext context, Widget child,
+      {bool replace = false,
+        PageTransitionType transitionType = PageTransitionType.fade,
+        required String routeName}) async {
+    if (replace) {
+      await Navigator.pushReplacement(
+          context,
+          PageTransition(
+              type: PageTransitionType.fade,
+              child: child,
+              settings: RouteSettings(name: routeName)));
+      return null;
+    }
+    return Navigator.push<T>(
+        context,
+        PageTransition(
+            type: PageTransitionType.fade,
+            child: child,
+            settings: RouteSettings(name: routeName)));
+  }
+
+
+  Future<dynamic> pushNamed(BuildContext context, String name,
+      {Object? arguments}) async {
+    return Navigator.of(context).pushNamed(name, arguments: arguments);
+  }
+
+  Future<dynamic> pushReplacementNamed(BuildContext context, String name,
+      {Object? arguments}) async {
+    return Navigator.of(context)
+        .pushReplacementNamed(name, arguments: arguments);
+  }
+
+  Future<dynamic> pushNamedAndRemoveUntil(BuildContext context,
+      {required String name,
+        required String oldRouteName,
+        Object? arguments}) async {
+    return Navigator.of(context).pushNamedAndRemoveUntil(
+        name, ModalRoute.withName(oldRouteName),
+        arguments: arguments);
+  }
+
+  Future<dynamic> pushNamedNewRouter(BuildContext context,
+      {required String name, Object? arguments}) async {
+    return Navigator.of(context)
+        .pushNamedAndRemoveUntil(name, (route) => false, arguments: arguments);
   }
 
   Future<dynamic> pushAndRemove(BuildContext context, Widget widget) {
-    return Navigator.pushAndRemoveUntil(
-      context,
+    return Navigator.of(context).pushAndRemoveUntil(
       MaterialPageRoute(builder: (context) => widget),
-      (Route<dynamic> route) => false,
+          (Route<dynamic> route) => false,
     );
+  }
+
+  void showSnackBarError(BuildContext context, String message) {
+    SnackBar snackBar = SnackBar(
+      content: Text(
+        message,
+        textAlign: TextAlign.center,
+        style: const TextStyle(color: Colors.white),
+      ),
+      backgroundColor: Colors.redAccent,
+    );
+    ScaffoldMessenger.of(context).showSnackBar(snackBar);
+  }
+
+  void showSnackBar(BuildContext context, String message) {
+    SnackBar snackBar = SnackBar(
+      content: Text(
+        message,
+        textAlign: TextAlign.center,
+        style: const TextStyle(color: Colors.black),
+      ),
+      backgroundColor: Colors.white,
+    );
+    ScaffoldMessenger.of(context).showSnackBar(snackBar);
   }
 
   Widget padding({

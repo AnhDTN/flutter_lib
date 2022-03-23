@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_lib/model/language.dart';
 import 'package:flutter_lib/providers/app_provider.dart';
 import 'package:flutter_lib/views/page/list_page.dart';
+import 'package:flutter_lib/views/widgets/float_menu_view.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
@@ -83,6 +84,7 @@ class _HomePageState extends State<HomePage> {
               ],
             ),
           ),
+      floatingActionButton: const FloatMenuView(),
     );
   }
 }

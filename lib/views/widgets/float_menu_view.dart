@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_lib/helpers/helpers.dart';
-import 'package:flutter_lib/helpers/svg_icons.dart';
+import 'package:flutter_lib/views/widgets/svg_icons.dart';
 
 class FloatMenuView extends StatefulWidget {
   const FloatMenuView({Key? key}) : super(key: key);
@@ -22,7 +21,7 @@ class _FloatMenuViewState extends State<FloatMenuView>
     super.dispose();
   }
 
-  Widget _menuItem({BuildContext? context, required String title, String? imagePath}) {
+  Widget _menuItem({BuildContext? context, required String title, required String imagePath}) {
     return Container(
       height: 40,
       width: 160,
@@ -32,7 +31,7 @@ class _FloatMenuViewState extends State<FloatMenuView>
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          SvgIcons(
+          SvgIcon(
             icon: imagePath,
             size: 16,
             color: Colors.red,

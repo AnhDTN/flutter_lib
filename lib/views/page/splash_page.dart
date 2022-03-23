@@ -1,19 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_lib/animations/fade_animation.dart';
-import 'package:flutter_lib/extensions/ui.dart';
 import 'package:flutter_lib/resources/image_name.dart';
-import 'package:flutter_lib/resources/route.dart';
-import 'package:flutter_lib/views/page/home_page.dart';
-import 'package:flutter_lib/views/router/routing.dart';
+import 'package:flutter_lib/views/base/base_page.dart';
+import 'package:flutter_lib/views/router/route_name.dart';
 
-class SplashPage extends StatefulWidget {
+class SplashPage extends BaseStatefulWidget {
   const SplashPage({Key? key}) : super(key: key);
 
   @override
   _SplashPageState createState() => _SplashPageState();
 }
 
-class _SplashPageState extends State<SplashPage> with TickerProviderStateMixin {
+class _SplashPageState extends BaseState<SplashPage> with TickerProviderStateMixin {
   late AnimationController _scaleController;
   late AnimationController _scale2Controller;
   late AnimationController _widthController;
@@ -71,8 +69,7 @@ class _SplashPageState extends State<SplashPage> with TickerProviderStateMixin {
         Tween<double>(begin: 1.0, end: 32.0).animate(_scale2Controller)
           ..addStatusListener((status) {
             if (status == AnimationStatus.completed) {
-              Routing.navigateAnim(context, const HomePage(),
-                  routeName: RouteName.loginPage, replace: true);
+              pushReplacementNamed(context, RouteName.homePage);
             }
           });
     super.initState();
@@ -83,8 +80,8 @@ class _SplashPageState extends State<SplashPage> with TickerProviderStateMixin {
     return Scaffold(
       backgroundColor: const Color.fromRGBO(3, 9, 23, 1),
       body: SizedBox(
-        height: maxHeight(context),
-        width: maxWidth(context),
+        height: height(context),
+        width: width(context),
         child: Stack(children: [
           Positioned(
             top: -50,
@@ -92,7 +89,7 @@ class _SplashPageState extends State<SplashPage> with TickerProviderStateMixin {
             child: FadeAnimation(
                 delay: 1,
                 child: Container(
-                  width: maxWidth(context),
+                  width: width(context),
                   height: 400,
                   decoration: BoxDecoration(
                       image: DecorationImage(
@@ -106,7 +103,7 @@ class _SplashPageState extends State<SplashPage> with TickerProviderStateMixin {
             child: FadeAnimation(
                 delay: 1.3,
                 child: Container(
-                  width: maxWidth(context),
+                  width: width(context),
                   height: 400,
                   decoration: BoxDecoration(
                       image: DecorationImage(
@@ -120,7 +117,7 @@ class _SplashPageState extends State<SplashPage> with TickerProviderStateMixin {
             child: FadeAnimation(
                 delay: 1.6,
                 child: Container(
-                  width: maxWidth(context),
+                  width: width(context),
                   height: 400,
                   decoration: BoxDecoration(
                       image: DecorationImage(
